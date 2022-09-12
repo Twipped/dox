@@ -1,0 +1,23 @@
+{
+  "name": "@jsdox/repo",
+  "description": "Monorepo for the dox/jsdox project",
+  "author": "Jocelyn Badgley <joc@twipped.com>",
+  "contributors": [
+    "TJ Holowaychuk <tj@vision-media.ca>",
+    "Arseny Zarechnev <me@evindor.com>",
+    "Thomas Parisot <hi@oncletom.io>",
+    "Stephen Mathieson <me@stephenmathieson.com>",
+    "Vladimir Tsvang <vtsvang@gmail.com>",
+    "Nathan Rajlich <nathan@tootallnate.net>",
+    "Gion Kunz <gion.kunz@gmail.com>",
+    "ForbesLindesay"
+  ],
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "make test"
+  }
+}

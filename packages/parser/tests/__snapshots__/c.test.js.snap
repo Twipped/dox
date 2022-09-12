@@ -1,0 +1,771 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`c parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Dox
+Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
+MIT Licensed",
+  "end": 89,
+  "filename": "c.js",
+  "ignore": true,
+  "loc": Object {
+    "end": Position {
+      "column": 3,
+      "index": 89,
+      "line": 6,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1,
+      "line": 2,
+    },
+  },
+  "path": Array [],
+  "raw": "/*!
+ * Dox
+ * Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
+ * MIT Licensed
+ */",
+  "start": 1,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`c parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Module dependencies.",
+  "end": 122,
+  "filename": "c.js",
+  "ignore": false,
+  "loc": Object {
+    "end": Position {
+      "column": 3,
+      "index": 122,
+      "line": 10,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 91,
+      "line": 8,
+    },
+  },
+  "path": Array [],
+  "raw": "/**
+ * Module dependencies.
+ */",
+  "start": 91,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`c parses correctly: Item 3 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Library version.",
+  "end": 237,
+  "export": "version",
+  "filename": "c.js",
+  "ignore": false,
+  "isExport": true,
+  "kind": "constant",
+  "loc": Object {
+    "end": Position {
+      "column": 26,
+      "index": 237,
+      "line": 17,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 183,
+      "line": 14,
+    },
+  },
+  "member": "version",
+  "memberOf": "exports",
+  "name": "version",
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "version",
+    },
+  ],
+  "raw": "/**
+ * Library version.
+ */",
+  "start": 183,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "string",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "string",
+      },
+    ],
+    "string": "string",
+  },
+  "value": "0.0.5",
+}
+`;
+
+exports[`c parses correctly: Item 4 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Parse comments in the given string of \`js\`.",
+  "end": 1447,
+  "export": "parseComments",
+  "filename": "c.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 1447,
+      "line": 71,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 239,
+      "line": 19,
+    },
+  },
+  "member": "parseComments",
+  "memberOf": "exports",
+  "name": "parseComments",
+  "params": Array [
+    Object {
+      "name": "js",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parseComments",
+    },
+  ],
+  "raw": "/**
+ * Parse comments in the given string of \`js\`.
+ *
+ * @param {String} js
+ * @return {Array}
+ * @see exports.parseComment
+ * @api public
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Array",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Array",
+        },
+      ],
+      "string": "Array",
+    },
+  },
+  "see": "exports.parseComment",
+  "start": 239,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "public",
+}
+`;
+
+exports[`c parses correctly: Item 5 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Parse the given comment \`str\`.
+
+## The comment object returned contains the following
+
+ - \`tags\`  array of tag objects
+ - \`description\` the first line of the comment
+ - \`body\` lines following the description
+ - \`content\` both the description and the body
+ - \`isPrivate\` true when \\"@api private\\" is used",
+  "end": 2754,
+  "export": "parseComment",
+  "filename": "c.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 2754,
+      "line": 115,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1449,
+      "line": 73,
+    },
+  },
+  "member": "parseComment",
+  "memberOf": "exports",
+  "name": "parseComment",
+  "params": Array [
+    Object {
+      "name": "str",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parseComment",
+    },
+  ],
+  "raw": "/**
+ * Parse the given comment \`str\`.
+ *
+ * ## The comment object returned contains the following
+ *
+ *  - \`tags\`  array of tag objects
+ *  - \`description\` the first line of the comment
+ *  - \`body\` lines following the description
+ *  - \`content\` both the description and the body
+ *  - \`isPrivate\` true when \\"@api private\\" is used
+ *
+ * @param {String} str
+ * @return {Object}
+ * @see exports.parseTag
+ * @api public
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Object",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Object",
+        },
+      ],
+      "string": "Object",
+    },
+  },
+  "see": "exports.parseTag",
+  "start": 1449,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "public",
+}
+`;
+
+exports[`c parses correctly: Item 6 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Parse tag string \\"@param {Array} name description\\" etc.",
+  "end": 3776,
+  "export": "parseTag",
+  "filename": "c.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 3776,
+      "line": 158,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 2756,
+      "line": 117,
+    },
+  },
+  "member": "parseTag",
+  "memberOf": "exports",
+  "name": "parseTag",
+  "params": Array [
+    Object {
+      "name": "",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parseTag",
+    },
+  ],
+  "raw": "/**
+ * Parse tag string \\"@param {Array} name description\\" etc.
+ *
+ * @param {String}
+ * @return {Object}
+ * @api public
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Object",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Object",
+        },
+      ],
+      "string": "Object",
+    },
+  },
+  "start": 2756,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "public",
+}
+`;
+
+exports[`c parses correctly: Item 7 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Parse tag type string \\"{Array|Object}\\" etc.",
+  "end": 4000,
+  "export": "parseTagTypes",
+  "filename": "c.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 4000,
+      "line": 171,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 3778,
+      "line": 160,
+    },
+  },
+  "member": "parseTagTypes",
+  "memberOf": "exports",
+  "name": "parseTagTypes",
+  "params": Array [
+    Object {
+      "name": "str",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parseTagTypes",
+    },
+  ],
+  "raw": "/**
+ * Parse tag type string \\"{Array|Object}\\" etc.
+ *
+ * @param {String} str
+ * @return {Array}
+ * @api public
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Array",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Array",
+        },
+      ],
+      "string": "Array",
+    },
+  },
+  "start": 3778,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "public",
+}
+`;
+
+exports[`c parses correctly: Item 8 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Parse the context from the given \`str\` of js.
+
+This method attempts to discover the context
+for the comment based on it's code. Currently
+supports:
+
+  - function statements
+  - function expressions
+  - prototype methods
+  - prototype properties
+  - methods
+  - properties
+  - declarations",
+  "end": 5681,
+  "export": "parseCodeContext",
+  "filename": "c.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 5681,
+      "line": 245,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 4002,
+      "line": 173,
+    },
+  },
+  "member": "parseCodeContext",
+  "memberOf": "exports",
+  "name": "parseCodeContext",
+  "params": Array [
+    Object {
+      "name": "str",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parseCodeContext",
+    },
+  ],
+  "raw": "/**
+ * Parse the context from the given \`str\` of js.
+ *
+ * This method attempts to discover the context
+ * for the comment based on it's code. Currently
+ * supports:
+ *
+ *   - function statements
+ *   - function expressions
+ *   - prototype methods
+ *   - prototype properties
+ *   - methods
+ *   - properties
+ *   - declarations
+ *
+ * @param {String} str
+ * @return {Object}
+ * @api public
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Object",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Object",
+        },
+      ],
+      "string": "Object",
+    },
+  },
+  "start": 4002,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "public",
+}
+`;
+
+exports[`c parses correctly: Item 9 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Escape the given \`html\`.",
+  "end": 5953,
+  "filename": "c.js",
+  "fnName": "escape",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 5953,
+      "line": 260,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 5683,
+      "line": 247,
+    },
+  },
+  "name": "escape",
+  "params": Array [
+    Object {
+      "name": "html",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "escape",
+    },
+  ],
+  "raw": "/**
+ * Escape the given \`html\`.
+ *
+ * @param {String} html
+ * @return {String}
+ * @api private
+ * @custom With \`Markdown\` syntax
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+  "start": 5683,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+  "visibility": "private",
+}
+`;

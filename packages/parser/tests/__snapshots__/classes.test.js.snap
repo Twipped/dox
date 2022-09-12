@@ -1,0 +1,1763 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classes parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "A Foo.",
+  "end": 1148,
+  "export": "default",
+  "extends": Array [
+    Object {
+      "memberOf": "Foo",
+      "name": "Baz",
+    },
+  ],
+  "filename": "classes.js",
+  "ignore": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 1148,
+      "line": 65,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1,
+      "line": 2,
+    },
+  },
+  "name": "FooBar",
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "description": "construct a Foo",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isConstructor": true,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "constructor",
+      "member": "constructor",
+      "memberOf": "FooBar.prototype",
+      "name": "constructor",
+      "params": Array [
+        Object {
+          "description": "constructor options",
+          "name": "options",
+          "optional": false,
+          "type": JSDocType {
+            "parsed": Array [
+              Object {
+                "name": "Object",
+                "type": "NAME",
+              },
+            ],
+            "simple": Array [
+              Object {
+                "name": "Object",
+              },
+            ],
+            "string": "Object",
+          },
+        },
+      ],
+      "scope": "instance",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @constructor",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "@constructor",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "constructor",
+          "type": "",
+        },
+        Object {
+          "description": "constructor options",
+          "name": "options",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 3,
+              "source": "     * @param {Object} options constructor options",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "constructor options",
+                "end": "",
+                "lineEnd": "",
+                "name": "options",
+                "postDelimiter": " ",
+                "postName": " ",
+                "postTag": " ",
+                "postType": " ",
+                "start": "     ",
+                "tag": "@param",
+                "type": "{Object}",
+              },
+            },
+            Object {
+              "number": 4,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "param",
+          "type": "Object",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+    Object {
+      "description": "Method of the Foo class.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "method",
+      "member": "bar",
+      "memberOf": "FooBar.prototype",
+      "name": "bar",
+      "params": Array [],
+      "returns": Object {
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "Overflow",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "Overflow",
+            },
+          ],
+          "string": "Overflow",
+        },
+      },
+      "scope": "instance",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @return {Overflow}",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": " ",
+                "postType": "",
+                "start": "     ",
+                "tag": "@return",
+                "type": "{Overflow}",
+              },
+            },
+            Object {
+              "number": 3,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "return",
+          "type": "Overflow",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+    Object {
+      "description": "Static method of the Foo class.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "method",
+      "member": "staticMethod",
+      "memberOf": "FooBar.prototype",
+      "name": "staticMethod",
+      "params": Array [],
+      "returns": Object {
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "String",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "String",
+            },
+          ],
+          "string": "String",
+        },
+      },
+      "scope": "static",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @return {String}",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": " ",
+                "postType": "",
+                "start": "     ",
+                "tag": "@return",
+                "type": "{String}",
+              },
+            },
+            Object {
+              "number": 3,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "return",
+          "type": "String",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+    Object {
+      "description": "Static generator method of the Foo class.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": true,
+      "kind": "method",
+      "member": "staticGeneratorMethod",
+      "memberOf": "FooBar.prototype",
+      "name": "staticGeneratorMethod",
+      "params": Array [],
+      "returns": Object {
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "String",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "String",
+            },
+          ],
+          "string": "String",
+        },
+      },
+      "scope": "static",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @return {String}",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": " ",
+                "postType": "",
+                "start": "     ",
+                "tag": "@return",
+                "type": "{String}",
+              },
+            },
+            Object {
+              "number": 3,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "return",
+          "type": "String",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+    Object {
+      "description": "Generator method with computed name.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": true,
+      "kind": "method",
+      "member": "[Symbol.iterator]",
+      "memberOf": "FooBar.prototype",
+      "name": "[Symbol.iterator]",
+      "params": Array [],
+      "scope": "instance",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @yields {String}",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": " ",
+                "postType": "",
+                "start": "     ",
+                "tag": "@yields",
+                "type": "{String}",
+              },
+            },
+            Object {
+              "number": 3,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "yields",
+          "type": "String",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+      "yields": Object {
+        "description": "",
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "String",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "String",
+            },
+          ],
+          "string": "String",
+        },
+      },
+    },
+    Object {
+      "description": "Setter for the blah property.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "set",
+      "member": "blah",
+      "memberOf": "FooBar.prototype",
+      "name": "blah",
+      "params": Array [
+        Object {
+          "member": "v",
+          "name": "v",
+        },
+      ],
+      "scope": "instance",
+      "tags": Array [],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+    Object {
+      "description": "Getter for the blah property.",
+      "export": "default",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isDefaultExport": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "get",
+      "member": "blah",
+      "memberOf": "FooBar.prototype",
+      "name": "blah",
+      "params": Array [],
+      "returns": Object {
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "String",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "String",
+            },
+          ],
+          "string": "String",
+        },
+      },
+      "scope": "instance",
+      "tags": Array [
+        Object {
+          "description": "",
+          "name": "",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 2,
+              "source": "     * @return {String}",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "",
+                "end": "",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": " ",
+                "postName": "",
+                "postTag": " ",
+                "postType": "",
+                "start": "     ",
+                "tag": "@return",
+                "type": "{String}",
+              },
+            },
+            Object {
+              "number": 3,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "return",
+          "type": "String",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "FooBar",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "FooBar",
+          },
+        ],
+        "string": "FooBar",
+      },
+    },
+  ],
+  "raw": "/**
+ * A Foo.
+ * @class FooBar
+ * @extends Foo.Baz
+ */",
+  "start": 1,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "construct a Foo",
+  "end": 276,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isConstructor": true,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "constructor",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 276,
+      "line": 16,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 107,
+      "line": 9,
+    },
+  },
+  "member": "constructor",
+  "memberOf": "FooBar.prototype",
+  "name": "constructor",
+  "params": Array [
+    Object {
+      "description": "constructor options",
+      "name": "options",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Object",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Object",
+          },
+        ],
+        "string": "Object",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "constructor",
+    },
+  ],
+  "raw": "/**
+     * construct a Foo
+     * @constructor
+     * @param {Object} options constructor options
+     */",
+  "scope": "instance",
+  "start": 107,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 3 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Method of the Foo class.",
+  "end": 450,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 450,
+      "line": 24,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 282,
+      "line": 18,
+    },
+  },
+  "member": "bar",
+  "memberOf": "FooBar.prototype",
+  "name": "bar",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "bar",
+    },
+  ],
+  "raw": "/**
+     * Method of the Foo class.
+     * @return {Overflow}
+     */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Overflow",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Overflow",
+        },
+      ],
+      "string": "Overflow",
+    },
+  },
+  "scope": "instance",
+  "start": 282,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 4 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Static method of the Foo class.",
+  "end": 593,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 593,
+      "line": 32,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 456,
+      "line": 26,
+    },
+  },
+  "member": "staticMethod",
+  "memberOf": "FooBar.prototype",
+  "name": "staticMethod",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "staticMethod",
+    },
+  ],
+  "raw": "/**
+     * Static method of the Foo class.
+     * @return {String}
+     */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+  "scope": "static",
+  "start": 456,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 5 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Static generator method of the Foo class.",
+  "end": 756,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": true,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 756,
+      "line": 40,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 599,
+      "line": 34,
+    },
+  },
+  "member": "staticGeneratorMethod",
+  "memberOf": "FooBar.prototype",
+  "name": "staticGeneratorMethod",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "staticGeneratorMethod",
+    },
+  ],
+  "raw": "/**
+     * Static generator method of the Foo class.
+     * @return {String}
+     */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+  "scope": "static",
+  "start": 599,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 6 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Generator method with computed name.",
+  "end": 918,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": true,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 918,
+      "line": 48,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 762,
+      "line": 42,
+    },
+  },
+  "member": "[Symbol.iterator]",
+  "memberOf": "FooBar.prototype",
+  "name": "[Symbol.iterator]",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "[Symbol.iterator]",
+    },
+  ],
+  "raw": "/**
+     * Generator method with computed name.
+     * @yields {String}
+     */",
+  "scope": "instance",
+  "start": 762,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+  "yields": Object {
+    "description": "",
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 7 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Setter for the blah property.",
+  "end": 1019,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "set",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 1019,
+      "line": 55,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 924,
+      "line": 50,
+    },
+  },
+  "member": "blah",
+  "memberOf": "FooBar.prototype",
+  "name": "blah",
+  "params": Array [
+    Object {
+      "member": "v",
+      "name": "v",
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "blah",
+    },
+  ],
+  "raw": "/**
+     * Setter for the blah property.
+     */",
+  "scope": "instance",
+  "start": 924,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 8 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Getter for the blah property.",
+  "end": 1145,
+  "export": "default",
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "get",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 1145,
+      "line": 63,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 1025,
+      "line": 57,
+    },
+  },
+  "member": "blah",
+  "memberOf": "FooBar.prototype",
+  "name": "blah",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "FooBar",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "blah",
+    },
+  ],
+  "raw": "/**
+     * Getter for the blah property.
+     * @return {String}
+     */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+  "scope": "instance",
+  "start": 1025,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "FooBar",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "FooBar",
+      },
+    ],
+    "string": "FooBar",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 9 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 1340,
+  "export": "Baz",
+  "extends": Array [
+    Object {
+      "name": "FooBar",
+    },
+  ],
+  "filename": "classes.js",
+  "ignore": false,
+  "isExport": true,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 1340,
+      "line": 78,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1150,
+      "line": 67,
+    },
+  },
+  "name": "Bazr",
+  "path": Array [
+    Object {
+      "name": "Baz",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "description": "",
+      "filename": "classes.js",
+      "ignore": false,
+      "isAsync": false,
+      "isConstructor": true,
+      "isExport": true,
+      "isGenerator": false,
+      "kind": "constructor",
+      "member": "constructor",
+      "memberOf": "Baz.prototype",
+      "name": "constructor",
+      "params": Array [
+        Object {
+          "description": "constructor options",
+          "name": "options",
+          "optional": false,
+          "type": JSDocType {
+            "parsed": Array [
+              Object {
+                "name": "Object",
+                "type": "NAME",
+              },
+            ],
+            "simple": Array [
+              Object {
+                "name": "Object",
+              },
+            ],
+            "string": "Object",
+          },
+        },
+      ],
+      "scope": "instance",
+      "tags": Array [
+        Object {
+          "description": "constructor options",
+          "name": "options",
+          "optional": false,
+          "problems": Array [],
+          "source": Array [
+            Object {
+              "number": 1,
+              "source": "     * @param {Object} options constructor options",
+              "tokens": Object {
+                "delimiter": "*",
+                "description": "constructor options",
+                "end": "",
+                "lineEnd": "",
+                "name": "options",
+                "postDelimiter": " ",
+                "postName": " ",
+                "postTag": " ",
+                "postType": " ",
+                "start": "     ",
+                "tag": "@param",
+                "type": "{Object}",
+              },
+            },
+            Object {
+              "number": 2,
+              "source": "     */",
+              "tokens": Object {
+                "delimiter": "",
+                "description": "",
+                "end": "*/",
+                "lineEnd": "",
+                "name": "",
+                "postDelimiter": "",
+                "postName": "",
+                "postTag": "",
+                "postType": "",
+                "start": "     ",
+                "tag": "",
+                "type": "",
+              },
+            },
+          ],
+          "tag": "param",
+          "type": "Object",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Baz",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Baz",
+          },
+        ],
+        "string": "Baz",
+      },
+    },
+  ],
+  "raw": "/**
+ * @class Bazr
+ */",
+  "start": 1150,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Baz",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Baz",
+      },
+    ],
+    "string": "Baz",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 10 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 1338,
+  "filename": "classes.js",
+  "ignore": false,
+  "isAsync": false,
+  "isConstructor": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "constructor",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 1338,
+      "line": 77,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 1212,
+      "line": 72,
+    },
+  },
+  "member": "constructor",
+  "memberOf": "Baz.prototype",
+  "name": "constructor",
+  "params": Array [
+    Object {
+      "description": "constructor options",
+      "name": "options",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Object",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Object",
+          },
+        ],
+        "string": "Object",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "Baz",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "constructor",
+    },
+  ],
+  "raw": "/**
+     * @param {Object} options constructor options
+     */",
+  "scope": "instance",
+  "start": 1212,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Baz",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Baz",
+      },
+    ],
+    "string": "Baz",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 11 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 1445,
+  "filename": "classes.js",
+  "ignore": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 1445,
+      "line": 87,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1342,
+      "line": 80,
+    },
+  },
+  "name": "Lorem",
+  "path": Array [
+    Object {
+      "name": "Lorem",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "filename": "classes.js",
+      "isAsync": false,
+      "isConstructor": true,
+      "isGenerator": false,
+      "kind": "constructor",
+      "member": "constructor",
+      "memberOf": "Lorem.prototype",
+      "name": "constructor",
+      "params": Array [
+        Object {
+          "member": "options",
+          "name": "options",
+        },
+      ],
+      "scope": "instance",
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Lorem",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Lorem",
+          },
+        ],
+        "string": "Lorem",
+      },
+    },
+  ],
+  "raw": "/**
+ * @class Lorem
+ */",
+  "start": 1342,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Lorem",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Lorem",
+      },
+    ],
+    "string": "Lorem",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 12 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Class extended from function result",
+  "end": 1601,
+  "extends": Array [
+    Object {
+      "expression": "mixin(Foo.Bar, Baz)",
+    },
+  ],
+  "filename": "classes.js",
+  "ignore": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 1601,
+      "line": 96,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1447,
+      "line": 89,
+    },
+  },
+  "name": "Ipsum",
+  "path": Array [
+    Object {
+      "name": "Ipsum",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "filename": "classes.js",
+      "isAsync": false,
+      "isConstructor": true,
+      "isGenerator": false,
+      "kind": "constructor",
+      "member": "constructor",
+      "memberOf": "Ipsum.prototype",
+      "name": "constructor",
+      "params": Array [
+        Object {
+          "member": "options",
+          "name": "options",
+        },
+      ],
+      "scope": "instance",
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Ipsum",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Ipsum",
+          },
+        ],
+        "string": "Ipsum",
+      },
+    },
+  ],
+  "raw": "/**
+ * Class extended from function result
+ */",
+  "start": 1447,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Ipsum",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Ipsum",
+      },
+    ],
+    "string": "Ipsum",
+  },
+}
+`;
+
+exports[`classes parses correctly: Item 13 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Class extended from inline class",
+  "end": 1685,
+  "extends": Array [
+    Object {
+      "kind": "class",
+      "name": "Trisec",
+      "properties": Array [],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Trisec",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Trisec",
+          },
+        ],
+        "string": "Trisec",
+      },
+    },
+  ],
+  "filename": "classes.js",
+  "ignore": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 38,
+      "index": 1685,
+      "line": 101,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1603,
+      "line": 98,
+    },
+  },
+  "name": "Dorem",
+  "path": Array [
+    Object {
+      "name": "Dorem",
+    },
+  ],
+  "properties": Array [],
+  "raw": "/**
+ * Class extended from inline class
+ */",
+  "start": 1603,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Dorem",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Dorem",
+      },
+    ],
+    "string": "Dorem",
+  },
+}
+`;

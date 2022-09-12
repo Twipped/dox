@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "*.{test,spec}.{js,jsx}"
+      ],
+      "globals": {
+        "__filename": "readonly",
+        "__dirname": "readonly"
+      },
+      "extends": [
+        "@twipped/eslint-config/jest"
+      ],
+      "rules": {
+        "react/prop-types": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/jsx-no-constructed-context-values": "off"
+      }
+    }
+  ]
+}

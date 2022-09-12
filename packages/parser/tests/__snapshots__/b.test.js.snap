@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`b parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Library version.",
+  "end": 92,
+  "export": "version",
+  "filename": "b.js",
+  "ignore": false,
+  "isExport": true,
+  "kind": "constant",
+  "loc": Object {
+    "end": Position {
+      "column": 26,
+      "index": 92,
+      "line": 8,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1,
+      "line": 2,
+    },
+  },
+  "member": "version",
+  "memberOf": "exports",
+  "name": "version",
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "version",
+    },
+  ],
+  "raw": "/**
+ * Library version.
+ * 
+ * @type {String}
+ * @api public
+ */",
+  "start": 1,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "String",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "String",
+      },
+    ],
+    "string": "String",
+  },
+  "value": "0.0.1",
+  "visibility": "public",
+}
+`;
+
+exports[`b parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 235,
+  "export": "parse",
+  "filename": "b.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 235,
+      "line": 16,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 95,
+      "line": 11,
+    },
+  },
+  "member": "parse",
+  "memberOf": "exports",
+  "name": "parse",
+  "params": Array [
+    Object {
+      "description": "An object that must provide a \`requestExecutor\` field.",
+      "name": "config",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Object",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Object",
+          },
+        ],
+        "string": "Object",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "parse",
+    },
+  ],
+  "raw": "/**
+ * @param {Object} config An object that must provide a \`requestExecutor\` field.
+ */",
+  "returns": Object {
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "String",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "String",
+        },
+      ],
+      "string": "String",
+    },
+  },
+  "start": 95,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`b parses correctly: Item 3 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Something",
+  "end": 302,
+  "export": "default",
+  "filename": "b.js",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 44,
+      "index": 302,
+      "line": 21,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 237,
+      "line": 18,
+    },
+  },
+  "member": "config",
+  "memberOf": "module.exports",
+  "name": "config",
+  "params": Array [
+    Object {
+      "default": 3,
+      "name": "a",
+      "optional": true,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "module",
+    },
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "config",
+    },
+  ],
+  "raw": "/**
+ * Something
+ */",
+  "start": 237,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;

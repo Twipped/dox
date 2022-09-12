@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enums parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "FSM states.",
+  "end": 145,
+  "filename": "enums.js",
+  "ignore": false,
+  "isEnum": true,
+  "kind": "property",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 145,
+      "line": 11,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "member": "states",
+  "memberOf": "FSM.prototype",
+  "name": "states",
+  "path": Array [
+    Object {
+      "name": "FSM",
+    },
+    Object {
+      "name": "prototype",
+    },
+    Object {
+      "name": "states",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "kind": "property",
+      "member": "STOPPED",
+      "memberOf": "states",
+      "name": "STOPPED",
+      "path": Array [
+        Object {
+          "name": "FSM",
+        },
+        Object {
+          "name": "prototype",
+        },
+        Object {
+          "name": "states",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+      "value": 0,
+    },
+    Object {
+      "kind": "property",
+      "member": "STARTING",
+      "memberOf": "states",
+      "name": "STARTING",
+      "path": Array [
+        Object {
+          "name": "FSM",
+        },
+        Object {
+          "name": "prototype",
+        },
+        Object {
+          "name": "states",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+      "value": 1,
+    },
+    Object {
+      "kind": "property",
+      "member": "WORKING",
+      "memberOf": "states",
+      "name": "WORKING",
+      "path": Array [
+        Object {
+          "name": "FSM",
+        },
+        Object {
+          "name": "prototype",
+        },
+        Object {
+          "name": "states",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+      "value": 2,
+    },
+    Object {
+      "kind": "property",
+      "member": "STOPPING",
+      "memberOf": "states",
+      "name": "STOPPING",
+      "path": Array [
+        Object {
+          "name": "FSM",
+        },
+        Object {
+          "name": "prototype",
+        },
+        Object {
+          "name": "states",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+      "value": 3,
+    },
+  ],
+  "raw": "/**
+ * FSM states.
+ *
+ * @enum
+ */",
+  "scope": "instance",
+  "start": 0,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Object",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Object",
+      },
+    ],
+    "string": "Object",
+  },
+}
+`;
+
+exports[`enums parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Colors.",
+  "end": 204,
+  "export": "RED",
+  "filename": "enums.js",
+  "ignore": false,
+  "isEnum": true,
+  "isExport": true,
+  "kind": "constant",
+  "loc": Object {
+    "end": Position {
+      "column": 25,
+      "index": 204,
+      "line": 19,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 148,
+      "line": 14,
+    },
+  },
+  "member": "RED",
+  "memberOf": "exports",
+  "name": "RED",
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "RED",
+    },
+  ],
+  "raw": "/**
+ * Colors.
+ *
+ * @enum
+ */",
+  "start": 148,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "string",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "string",
+      },
+    ],
+    "string": "string",
+  },
+  "value": "#f00",
+}
+`;
+
+exports[`enums parses correctly: Item 3 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Text Alignment",
+  "end": 439,
+  "filename": "enums.js",
+  "ignore": false,
+  "isEnum": true,
+  "kind": "object",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 439,
+      "line": 34,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 310,
+      "line": 25,
+    },
+  },
+  "member": "ALIGNMENT",
+  "name": "ALIGNMENT",
+  "path": Array [
+    Object {
+      "name": "ALIGNMENT",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "kind": "property",
+      "member": "LEFT",
+      "memberOf": "ALIGNMENT",
+      "name": "LEFT",
+      "path": Array [
+        Object {
+          "name": "ALIGNMENT",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "LEFT",
+    },
+    Object {
+      "kind": "property",
+      "member": "CENTER",
+      "memberOf": "ALIGNMENT",
+      "name": "CENTER",
+      "path": Array [
+        Object {
+          "name": "ALIGNMENT",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "CENTER",
+    },
+    Object {
+      "kind": "property",
+      "member": "RIGHT",
+      "memberOf": "ALIGNMENT",
+      "name": "RIGHT",
+      "path": Array [
+        Object {
+          "name": "ALIGNMENT",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "RIGHT",
+    },
+  ],
+  "raw": "/**
+ * Text Alignment
+ *
+ * @enum {String}
+ */",
+  "start": 310,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "String",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "String",
+      },
+    ],
+    "string": "String",
+  },
+}
+`;
