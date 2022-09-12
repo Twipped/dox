@@ -1,0 +1,16 @@
+{
+	"extends": [
+    "@twipped/eslint-config/node-esm",
+    "@twipped/eslint-config/jsdoc"
+  ],
+  "rules": {
+    "import/extensions": ["error", {
+      "ignorePackages": true,
+      "pattern": {
+        "js": "always",
+        "mjs": "always",
+        "jsx": "always"
+      }
+    }]
+  }
+}

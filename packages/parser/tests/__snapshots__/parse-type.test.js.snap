@@ -1,0 +1,800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse-type !number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "PREFIX_BANG",
+      },
+      "type": "NOT_NULLABLE",
+      "value": Object {
+        "name": "number",
+        "type": "NAME",
+      },
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+      "nullable": false,
+    },
+  ],
+  "string": "!number",
+}
+`;
+
+exports[`parse-type (T|Array)<string|number> 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "ANGLE_BRACKET",
+      },
+      "objects": Array [
+        Object {
+          "left": Object {
+            "name": "string",
+            "type": "NAME",
+          },
+          "right": Object {
+            "name": "number",
+            "type": "NAME",
+          },
+          "type": "UNION",
+        },
+      ],
+      "subject": Object {
+        "type": "PARENTHESIS",
+        "value": Object {
+          "left": Object {
+            "name": "T",
+            "type": "NAME",
+          },
+          "right": Object {
+            "name": "Array",
+            "type": "NAME",
+          },
+          "type": "UNION",
+        },
+      },
+      "type": "GENERIC",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "generic": Object {
+        "name": "T",
+      },
+      "name": "string",
+    },
+    Object {
+      "generic": Object {
+        "name": "T",
+      },
+      "name": "number",
+    },
+    Object {
+      "generic": Object {
+        "name": "Array",
+      },
+      "name": "string",
+    },
+    Object {
+      "generic": Object {
+        "name": "Array",
+      },
+      "name": "number",
+    },
+  ],
+  "string": "(T | Array)<string | number>",
+}
+`;
+
+exports[`parse-type ...?number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "PREFIX_DOTS",
+      },
+      "type": "VARIADIC",
+      "value": Object {
+        "meta": Object {
+          "syntax": "PREFIX_QUESTION_MARK",
+        },
+        "type": "NULLABLE",
+        "value": Object {
+          "name": "number",
+          "type": "NAME",
+        },
+      },
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+      "nullable": true,
+      "variadic": true,
+    },
+  ],
+  "string": "...?number",
+}
+`;
+
+exports[`parse-type ...number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "PREFIX_DOTS",
+      },
+      "type": "VARIADIC",
+      "value": Object {
+        "name": "number",
+        "type": "NAME",
+      },
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+      "variadic": true,
+    },
+  ],
+  "string": "...number",
+}
+`;
+
+exports[`parse-type ?number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "PREFIX_QUESTION_MARK",
+      },
+      "type": "NULLABLE",
+      "value": Object {
+        "name": "number",
+        "type": "NAME",
+      },
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+      "nullable": true,
+    },
+  ],
+  "string": "?number",
+}
+`;
+
+exports[`parse-type {length: number, type: {name: {first: string, last: string}, id: number | string}} 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "entries": Array [
+        Object {
+          "key": "length",
+          "quoteStyle": "none",
+          "readonly": false,
+          "type": "RECORD_ENTRY",
+          "value": Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        },
+        Object {
+          "key": "type",
+          "quoteStyle": "none",
+          "readonly": false,
+          "type": "RECORD_ENTRY",
+          "value": Object {
+            "entries": Array [
+              Object {
+                "key": "name",
+                "quoteStyle": "none",
+                "readonly": false,
+                "type": "RECORD_ENTRY",
+                "value": Object {
+                  "entries": Array [
+                    Object {
+                      "key": "first",
+                      "quoteStyle": "none",
+                      "readonly": false,
+                      "type": "RECORD_ENTRY",
+                      "value": Object {
+                        "name": "string",
+                        "type": "NAME",
+                      },
+                    },
+                    Object {
+                      "key": "last",
+                      "quoteStyle": "none",
+                      "readonly": false,
+                      "type": "RECORD_ENTRY",
+                      "value": Object {
+                        "name": "string",
+                        "type": "NAME",
+                      },
+                    },
+                  ],
+                  "type": "RECORD",
+                },
+              },
+              Object {
+                "key": "id",
+                "quoteStyle": "none",
+                "readonly": false,
+                "type": "RECORD_ENTRY",
+                "value": Object {
+                  "left": Object {
+                    "name": "number",
+                    "type": "NAME",
+                  },
+                  "right": Object {
+                    "name": "string",
+                    "type": "NAME",
+                  },
+                  "type": "UNION",
+                },
+              },
+            ],
+            "type": "RECORD",
+          },
+        },
+      ],
+      "type": "RECORD",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "record": Object {
+        "length": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "type": Array [
+          Object {
+            "record": Object {
+              "id": Array [
+                Object {
+                  "name": "number",
+                },
+                Object {
+                  "name": "string",
+                },
+              ],
+              "name": Array [
+                Object {
+                  "record": Object {
+                    "first": Array [
+                      Object {
+                        "name": "string",
+                      },
+                    ],
+                    "last": Array [
+                      Object {
+                        "name": "string",
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+  "string": "{length: number, type: {name: {first: string, last: string}, id: number | string}}",
+}
+`;
+
+exports[`parse-type Array<string|number> 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "ANGLE_BRACKET",
+      },
+      "objects": Array [
+        Object {
+          "left": Object {
+            "name": "string",
+            "type": "NAME",
+          },
+          "right": Object {
+            "name": "number",
+            "type": "NAME",
+          },
+          "type": "UNION",
+        },
+      ],
+      "subject": Object {
+        "name": "Array",
+        "type": "NAME",
+      },
+      "type": "GENERIC",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "generic": Object {
+        "name": "Array",
+      },
+      "name": "string",
+    },
+    Object {
+      "generic": Object {
+        "name": "Array",
+      },
+      "name": "number",
+    },
+  ],
+  "string": "Array<string | number>",
+}
+`;
+
+exports[`parse-type Function 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "Function",
+      "type": "NAME",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "Function",
+    },
+  ],
+  "string": "Function",
+}
+`;
+
+exports[`parse-type Number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "Number",
+      "type": "NAME",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "Number",
+    },
+  ],
+  "string": "Number",
+}
+`;
+
+exports[`parse-type function(...) 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "new": null,
+      "params": Array [
+        Object {
+          "meta": Object {
+            "syntax": "ONLY_DOTS",
+          },
+          "type": "VARIADIC",
+          "value": Object {
+            "type": "ANY",
+          },
+        },
+      ],
+      "returns": null,
+      "this": null,
+      "type": "FUNCTION",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "kind": "function",
+      "name": "Function",
+      "params": Array [
+        Object {
+          "type": Array [
+            Object {
+              "name": "*",
+              "variadic": true,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  "string": "function(...)",
+}
+`;
+
+exports[`parse-type function(...?) 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "new": null,
+      "params": Array [
+        Object {
+          "meta": Object {
+            "syntax": "PREFIX_DOTS",
+          },
+          "type": "VARIADIC",
+          "value": Object {
+            "type": "UNKNOWN",
+          },
+        },
+      ],
+      "returns": null,
+      "this": null,
+      "type": "FUNCTION",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "kind": "function",
+      "name": "Function",
+      "params": Array [
+        Object {
+          "type": Array [
+            Object {
+              "name": "*",
+              "variadic": true,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  "string": "function(...?)",
+}
+`;
+
+exports[`parse-type function(...?*) 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "new": null,
+      "params": Array [
+        Object {
+          "meta": Object {
+            "syntax": "PREFIX_DOTS",
+          },
+          "type": "VARIADIC",
+          "value": Object {
+            "meta": Object {
+              "syntax": "PREFIX_QUESTION_MARK",
+            },
+            "type": "NULLABLE",
+            "value": Object {
+              "type": "ANY",
+            },
+          },
+        },
+      ],
+      "returns": null,
+      "this": null,
+      "type": "FUNCTION",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "kind": "function",
+      "name": "Function",
+      "params": Array [
+        Object {
+          "type": Array [
+            Object {
+              "name": "*",
+              "nullable": true,
+              "variadic": true,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  "string": "function(...?*)",
+}
+`;
+
+exports[`parse-type function(string) 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "new": null,
+      "params": Array [
+        Object {
+          "name": "string",
+          "type": "NAME",
+        },
+      ],
+      "returns": null,
+      "this": null,
+      "type": "FUNCTION",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "kind": "function",
+      "name": "Function",
+      "params": Array [
+        Object {
+          "type": Array [
+            Object {
+              "name": "string",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  "string": "function(string)",
+}
+`;
+
+exports[`parse-type function(this: Foo, *): Bar 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "new": null,
+      "params": Array [
+        Object {
+          "type": "ANY",
+        },
+      ],
+      "returns": Object {
+        "name": "Bar",
+        "type": "NAME",
+      },
+      "this": Object {
+        "name": "Foo",
+        "type": "NAME",
+      },
+      "type": "FUNCTION",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "kind": "function",
+      "name": "Function",
+      "params": Array [
+        Object {
+          "type": Array [
+            Object {
+              "name": "*",
+            },
+          ],
+        },
+      ],
+      "returns": Array [
+        Object {
+          "name": "Bar",
+        },
+      ],
+      "this": Array [
+        Object {
+          "name": "Foo",
+        },
+      ],
+    },
+  ],
+  "string": "function(this: Foo, *): Bar",
+}
+`;
+
+exports[`parse-type import('example').a 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "hasEventPrefix": false,
+      "name": "a",
+      "owner": Object {
+        "path": Object {
+          "quoteStyle": "single",
+          "string": "example",
+          "type": "STRING_VALUE",
+        },
+        "type": "IMPORT",
+      },
+      "quoteStyle": "none",
+      "type": "MEMBER",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "importFrom": "example",
+      "name": "a",
+    },
+  ],
+  "string": "import('example').a",
+}
+`;
+
+exports[`parse-type number | string 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "number",
+      "type": "NAME",
+    },
+    Object {
+      "name": "string",
+      "type": "NAME",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+    },
+    Object {
+      "name": "string",
+    },
+  ],
+  "string": "number | string",
+}
+`;
+
+exports[`parse-type number 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "number",
+      "type": "NAME",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+    },
+  ],
+  "string": "number",
+}
+`;
+
+exports[`parse-type number= 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "SUFFIX_EQUALS_SIGN",
+      },
+      "type": "OPTIONAL",
+      "value": Object {
+        "name": "number",
+        "type": "NAME",
+      },
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+      "optional": true,
+    },
+  ],
+  "string": "number=",
+}
+`;
+
+exports[`parse-type number|string 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "number",
+      "type": "NAME",
+    },
+    Object {
+      "name": "string",
+      "type": "NAME",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+    },
+    Object {
+      "name": "string",
+    },
+  ],
+  "string": "number | string",
+}
+`;
+
+exports[`parse-type number|string|{name:string,age:number} 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "name": "number",
+      "type": "NAME",
+    },
+    Object {
+      "name": "string",
+      "type": "NAME",
+    },
+    Object {
+      "entries": Array [
+        Object {
+          "key": "name",
+          "quoteStyle": "none",
+          "readonly": false,
+          "type": "RECORD_ENTRY",
+          "value": Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        },
+        Object {
+          "key": "age",
+          "quoteStyle": "none",
+          "readonly": false,
+          "type": "RECORD_ENTRY",
+          "value": Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        },
+      ],
+      "type": "RECORD",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "name": "number",
+    },
+    Object {
+      "name": "string",
+    },
+    Object {
+      "record": Object {
+        "age": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "name": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+      },
+    },
+  ],
+  "string": "number | string | {name: string, age: number}",
+}
+`;
+
+exports[`parse-type string[] 1`] = `
+JSDocType {
+  "parsed": Array [
+    Object {
+      "meta": Object {
+        "syntax": "SQUARE_BRACKET",
+      },
+      "objects": Array [
+        Object {
+          "name": "string",
+          "type": "NAME",
+        },
+      ],
+      "subject": Object {
+        "name": "Array",
+        "type": "NAME",
+      },
+      "type": "GENERIC",
+    },
+  ],
+  "simple": Array [
+    Object {
+      "generic": Object {
+        "name": "Array",
+      },
+      "name": "string",
+    },
+  ],
+  "string": "string[]",
+}
+`;

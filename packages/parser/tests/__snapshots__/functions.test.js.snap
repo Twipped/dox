@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_fixtures/functions parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Function Name",
+  "end": 97,
+  "filename": "functions.js",
+  "fnName": "fnName1",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 97,
+      "line": 9,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "name": "fnName1",
+  "params": Array [
+    Object {
+      "name": "a",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+    Object {
+      "name": "b",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Number",
+          },
+        ],
+        "string": "Number",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "fnName1",
+    },
+  ],
+  "raw": "/**
+ * Function Name
+ *
+ * @param {String} a
+ * @param {Number} b
+ */",
+  "start": 0,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`_fixtures/functions parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Function Name",
+  "end": 211,
+  "export": "default",
+  "filename": "functions.js",
+  "fnName": "fnName2",
+  "ignore": false,
+  "isAsync": false,
+  "isDefaultExport": true,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 211,
+      "line": 19,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 99,
+      "line": 11,
+    },
+  },
+  "name": "fnName2",
+  "params": Array [
+    Object {
+      "name": "a",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+    Object {
+      "name": "b",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Number",
+          },
+        ],
+        "string": "Number",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "fnName2",
+    },
+  ],
+  "raw": "/**
+ * Function Name
+ *
+ * @param {String} a
+ * @param {Number} b
+ */",
+  "start": 99,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`_fixtures/functions parses correctly: Item 3 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Function Name",
+  "end": 317,
+  "export": "fnName3",
+  "filename": "functions.js",
+  "fnName": "fnName3",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 317,
+      "line": 29,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 213,
+      "line": 21,
+    },
+  },
+  "name": "fnName3",
+  "params": Array [
+    Object {
+      "name": "a",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+    Object {
+      "name": "b",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Number",
+          },
+        ],
+        "string": "Number",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "fnName3",
+    },
+  ],
+  "raw": "/**
+ * Function Name
+ *
+ * @param {String} a
+ * @param {Number} b
+ */",
+  "start": 213,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`_fixtures/functions parses correctly: Item 4 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Function Name",
+  "end": 448,
+  "export": "fnName4",
+  "filename": "functions.js",
+  "ignore": false,
+  "isAsync": false,
+  "isExport": true,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 9,
+      "index": 448,
+      "line": 43,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 319,
+      "line": 31,
+    },
+  },
+  "member": "fnName4",
+  "name": "fnName4",
+  "params": Array [
+    Object {
+      "name": "a",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "String",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "String",
+          },
+        ],
+        "string": "String",
+      },
+    },
+    Object {
+      "name": "b",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Number",
+          },
+        ],
+        "string": "Number",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "fnName4",
+    },
+  ],
+  "raw": "/**
+ * Function Name
+ *
+ * @param {String} a
+ * @param {Number} b
+ */",
+  "start": 319,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`_fixtures/functions parses correctly: Item 5 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 447,
+  "export": "val1",
+  "filename": "functions.js",
+  "ignore": false,
+  "isConstant": true,
+  "isExport": true,
+  "isReadOnly": true,
+  "kind": "constant",
+  "loc": Object {
+    "end": Position {
+      "column": 8,
+      "index": 447,
+      "line": 43,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 428,
+      "line": 40,
+    },
+  },
+  "member": "val1",
+  "name": "val1",
+  "path": Array [
+    Object {
+      "name": "val1",
+    },
+  ],
+  "raw": "/**
+ *
+ */",
+  "start": 428,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "number",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "number",
+      },
+    ],
+    "string": "number",
+  },
+  "value": 1,
+}
+`;

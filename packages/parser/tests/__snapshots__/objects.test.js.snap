@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_fixtures/objects parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Object 1",
+  "end": 81,
+  "export": "o1",
+  "filename": "objects.js",
+  "ignore": false,
+  "isExport": true,
+  "kind": "object",
+  "loc": Object {
+    "end": Position {
+      "column": 2,
+      "index": 81,
+      "line": 10,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1,
+      "line": 2,
+    },
+  },
+  "member": "o1",
+  "name": "o1",
+  "path": Array [
+    Object {
+      "name": "o1",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "kind": "property",
+      "member": "a",
+      "memberOf": "o1",
+      "name": "a",
+      "path": Array [
+        Object {
+          "name": "o1",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "a",
+    },
+    Object {
+      "kind": "property",
+      "member": "b",
+      "memberOf": "o1",
+      "name": "b",
+      "path": Array [
+        Object {
+          "name": "o1",
+        },
+      ],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "number",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "number",
+          },
+        ],
+        "string": "number",
+      },
+      "value": 2,
+    },
+  ],
+  "raw": "/**
+ * Object 1
+ *
+ * @type {Object}
+ */",
+  "start": 1,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Object",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Object",
+      },
+    ],
+    "string": "Object",
+  },
+}
+`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`a parses correctly: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "A
+Copyright (c) 2010 Author Name <Author Email>
+MIT Licensed",
+  "end": 78,
+  "filename": "a.js",
+  "ignore": true,
+  "loc": Object {
+    "end": Position {
+      "column": 3,
+      "index": 78,
+      "line": 6,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 1,
+      "line": 2,
+    },
+  },
+  "path": Array [],
+  "raw": "/*!
+ * A
+ * Copyright (c) 2010 Author Name <Author Email>
+ * MIT Licensed
+ */",
+  "start": 1,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`a parses correctly: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Library version.",
+  "end": 134,
+  "export": "version",
+  "filename": "a.js",
+  "ignore": false,
+  "isExport": true,
+  "kind": "constant",
+  "loc": Object {
+    "end": Position {
+      "column": 26,
+      "index": 134,
+      "line": 11,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 80,
+      "line": 8,
+    },
+  },
+  "member": "version",
+  "memberOf": "exports",
+  "name": "version",
+  "path": Array [
+    Object {
+      "name": "exports",
+    },
+    Object {
+      "name": "version",
+    },
+  ],
+  "raw": "/**
+ * Library version.
+ */",
+  "start": 80,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "string",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "string",
+      },
+    ],
+    "string": "string",
+  },
+  "value": "0.0.1",
+}
+`;

@@ -1,0 +1,1149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alias ../alias: Item 1 1`] = `
+Object {
+  "alias": "myObject",
+  "aliasOriginal": "hello",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Alias Tag Used",
+  "end": 78,
+  "filename": "alias.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 78,
+      "line": 8,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "member": "hello",
+  "name": "myObject",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "alias": "myObject",
+      "name": "myObject",
+      "original": "window.hello",
+    },
+  ],
+  "raw": "/**
+ * Alias Tag Used
+ *
+ * @alias myObject
+ */",
+  "start": 0,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias ../alias: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Alias Tag Unused",
+  "end": 138,
+  "filename": "alias.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 138,
+      "line": 15,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 80,
+      "line": 10,
+    },
+  },
+  "member": "hello",
+  "memberOf": "window",
+  "name": "hello",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "window",
+    },
+    Object {
+      "name": "hello",
+    },
+  ],
+  "raw": "/**
+ * Alias Tag Unused
+ */",
+  "start": 80,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias1: Item 1 1`] = `
+Object {
+  "alias": "myObject",
+  "aliasOriginal": "x",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Give x another name.",
+  "end": 182,
+  "filename": "jsdoc/alias1.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 182,
+      "line": 10,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 34,
+      "line": 3,
+    },
+  },
+  "member": "x",
+  "mutable": true,
+  "name": "myObject",
+  "namespace": Object {
+    "name": "myObject",
+  },
+  "params": Array [],
+  "path": Array [
+    Object {
+      "alias": "myObject",
+      "name": "myObject",
+      "original": "x",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "description": "document me",
+      "ignore": false,
+      "path": Array [
+        Object {
+          "name": "x",
+        },
+      ],
+      "tags": Array [],
+    },
+  ],
+  "raw": "/** Give x another name.
+        @alias myObject
+        @namespace
+     */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 34,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Object",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Object",
+      },
+    ],
+    "string": "Object",
+  },
+}
+`;
+
+exports[`alias alias1: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "document me",
+  "end": 176,
+  "filename": "jsdoc/alias1.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "property",
+  "loc": Object {
+    "end": Position {
+      "column": 25,
+      "index": 176,
+      "line": 9,
+    },
+    "start": Position {
+      "column": 8,
+      "index": 132,
+      "line": 8,
+    },
+  },
+  "member": "myProperty",
+  "memberOf": "x",
+  "mutable": true,
+  "name": "myProperty",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "x",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "cmt": Object {
+        "description": "document me",
+        "ignore": false,
+        "tags": Array [],
+      },
+      "code": "myProperty: 'foo'",
+      "ctx": Object {
+        "kind": "property",
+        "member": "myProperty",
+        "memberOf": undefined,
+        "name": "myProperty",
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "string",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "string",
+            },
+          ],
+          "string": "string",
+        },
+        "value": "foo",
+      },
+      "description": "document me",
+      "end": 176,
+      "ignore": false,
+      "kind": "property",
+      "loc": Object {
+        "end": Position {
+          "column": 25,
+          "index": 176,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 8,
+          "index": 132,
+          "line": 8,
+        },
+      },
+      "member": "myProperty",
+      "memberOf": undefined,
+      "name": "myProperty",
+      "path": Array [],
+      "raw": "/** document me */",
+      "start": 132,
+      "tags": Array [],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "foo",
+    },
+  ],
+  "raw": "/** document me */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 132,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "string",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "string",
+      },
+    ],
+    "string": "string",
+  },
+  "value": "foo",
+}
+`;
+
+exports[`alias alias2: Item 1 1`] = `
+Object {
+  "alias": "ns.Myclass#",
+  "aliasOriginal": "x",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 117,
+  "filename": "jsdoc/alias2.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "function",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 117,
+      "line": 7,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 19,
+      "line": 3,
+    },
+  },
+  "member": "x",
+  "memberOf": "ns",
+  "mutable": true,
+  "name": "Myclass",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "ns",
+    },
+    Object {
+      "alias": "ns.Myclass#",
+      "name": "Myclass",
+      "original": "x",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "description": "document me",
+      "ignore": false,
+      "path": Array [
+        Object {
+          "name": "x",
+        },
+      ],
+      "tags": Array [],
+    },
+  ],
+  "raw": "/** @alias ns.Myclass# */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 19,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Object",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Object",
+      },
+    ],
+    "string": "Object",
+  },
+}
+`;
+
+exports[`alias alias2: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "document me",
+  "end": 111,
+  "filename": "jsdoc/alias2.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "property",
+  "loc": Object {
+    "end": Position {
+      "column": 25,
+      "index": 111,
+      "line": 6,
+    },
+    "start": Position {
+      "column": 8,
+      "index": 67,
+      "line": 5,
+    },
+  },
+  "member": "myProperty",
+  "memberOf": "x",
+  "mutable": true,
+  "name": "myProperty",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "name": "x",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "cmt": Object {
+        "description": "document me",
+        "ignore": false,
+        "tags": Array [],
+      },
+      "code": "myProperty: 'foo'",
+      "ctx": Object {
+        "kind": "property",
+        "member": "myProperty",
+        "memberOf": undefined,
+        "name": "myProperty",
+        "type": JSDocType {
+          "parsed": Array [
+            Object {
+              "name": "string",
+              "type": "NAME",
+            },
+          ],
+          "simple": Array [
+            Object {
+              "name": "string",
+            },
+          ],
+          "string": "string",
+        },
+        "value": "foo",
+      },
+      "description": "document me",
+      "end": 111,
+      "ignore": false,
+      "kind": "property",
+      "loc": Object {
+        "end": Position {
+          "column": 25,
+          "index": 111,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 8,
+          "index": 67,
+          "line": 5,
+        },
+      },
+      "member": "myProperty",
+      "memberOf": undefined,
+      "name": "myProperty",
+      "path": Array [],
+      "raw": "/** document me */",
+      "start": 67,
+      "tags": Array [],
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "string",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "string",
+          },
+        ],
+        "string": "string",
+      },
+      "value": "foo",
+    },
+  ],
+  "raw": "/** document me */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 67,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "string",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "string",
+      },
+    ],
+    "string": "string",
+  },
+  "value": "foo",
+}
+`;
+
+exports[`alias alias3: Item 1 1`] = `
+Object {
+  "alias": "trackr.CookieManager",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 192,
+  "filename": "jsdoc/alias3.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 192,
+      "line": 10,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 35,
+      "line": 3,
+    },
+  },
+  "memberOf": "trackr",
+  "name": "CookieManager",
+  "params": Array [
+    Object {
+      "description": "",
+      "name": "kv",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "object",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "object",
+          },
+        ],
+        "string": "object",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "trackr",
+    },
+    Object {
+      "alias": "trackr.CookieManager",
+      "name": "CookieManager",
+      "original": "",
+    },
+  ],
+  "raw": "/** @class
+        @alias trackr.CookieManager
+        @param {object} kv
+    */",
+  "start": 35,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias3: Item 2 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "document me",
+  "end": 186,
+  "filename": "jsdoc/alias3.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "property",
+  "loc": Object {
+    "end": Position {
+      "column": 24,
+      "index": 186,
+      "line": 9,
+    },
+    "start": Position {
+      "column": 8,
+      "index": 143,
+      "line": 8,
+    },
+  },
+  "member": "kv",
+  "memberOf": "this",
+  "name": "kv",
+  "params": Array [
+    Object {
+      "member": "kv",
+      "name": "kv",
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "this",
+    },
+    Object {
+      "name": "value",
+    },
+  ],
+  "raw": "/** document me */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 143,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias4: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 199,
+  "filename": "jsdoc/alias4.js",
+  "ignore": false,
+  "loc": Object {
+    "end": Position {
+      "column": 3,
+      "index": 199,
+      "line": 12,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "module": Object {
+    "name": "module:jacket",
+  },
+  "path": Array [],
+  "raw": "/** @module jacket */",
+  "start": 0,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`alias alias4: Item 2 1`] = `
+Object {
+  "alias": "module:jacket",
+  "aliasOriginal": "Jacket",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Jacket constructor.",
+  "end": 175,
+  "filename": "jsdoc/alias4.js",
+  "fnName": "Jacket",
+  "ignore": false,
+  "isAsync": false,
+  "isConstructor": true,
+  "isGenerator": false,
+  "kind": "constructor",
+  "loc": Object {
+    "end": Position {
+      "column": 24,
+      "index": 175,
+      "line": 9,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 57,
+      "line": 3,
+    },
+  },
+  "name": "module:jacket",
+  "params": Array [],
+  "path": Array [
+    Object {
+      "alias": "module:jacket",
+      "name": "module:jacket",
+      "original": "Jacket",
+    },
+  ],
+  "raw": "/**
+     * Jacket constructor.
+     *
+     * @constructor
+     * @alias module:jacket
+     */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [],
+  },
+  "start": 57,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias5: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Toaster singleton.",
+  "end": 857,
+  "filename": "jsdoc/alias5.js",
+  "ignore": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 5,
+      "index": 857,
+      "line": 44,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "member": "Toaster",
+  "mutable": true,
+  "name": "Toaster",
+  "path": Array [
+    Object {
+      "name": "Toaster",
+    },
+  ],
+  "raw": "/**
+ * Toaster singleton.
+ *
+ * @class
+ */",
+  "start": 0,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`alias alias5: Item 2 1`] = `
+Object {
+  "alias": "Toaster#toast",
+  "aliasOriginal": "toast",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Toast an item.",
+  "end": 299,
+  "filename": "jsdoc/alias5.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 48,
+      "index": 299,
+      "line": 17,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 128,
+      "line": 11,
+    },
+  },
+  "member": "toast",
+  "memberOf": "Toaster",
+  "mutable": true,
+  "name": "toast",
+  "params": Array [
+    Object {
+      "description": "- The item to toast.",
+      "name": "item",
+      "optional": false,
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "BreadyThing",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "BreadyThing",
+          },
+        ],
+        "string": "BreadyThing",
+      },
+    },
+  ],
+  "path": Array [
+    Object {
+      "name": "Toaster",
+    },
+    Object {
+      "alias": "Toaster#toast",
+      "name": "toast",
+      "original": "Toaster.prototype.toast",
+    },
+  ],
+  "raw": "/**
+     * Toast an item.
+     *
+     * @alias Toaster#toast
+     * @param {BreadyThing} item - The item to toast.
+     */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [
+      "Object",
+      "unknown",
+    ],
+  },
+  "scope": "instance",
+  "start": 128,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias5: Item 3 1`] = `
+Object {
+  "alias": "clean",
+  "aliasOriginal": "clean",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Clean the toaster.",
+  "end": 456,
+  "filename": "jsdoc/alias5.js",
+  "ignore": false,
+  "isAsync": false,
+  "isGenerator": false,
+  "kind": "method",
+  "loc": Object {
+    "end": Position {
+      "column": 44,
+      "index": 456,
+      "line": 26,
+    },
+    "start": Position {
+      "column": 4,
+      "index": 305,
+      "line": 19,
+    },
+  },
+  "member": "clean",
+  "mutable": true,
+  "name": "clean",
+  "params": Array [],
+  "parent": "Toaster",
+  "path": Array [
+    Object {
+      "alias": "clean",
+      "name": "clean",
+      "original": "Toaster.prototype.clean",
+    },
+  ],
+  "raw": "/**
+     * Clean the toaster.
+     *
+     * @alias clean
+     * @memberOf Toaster
+     * @instance
+     */",
+  "returnPotentials": TypeInferance {
+    "potentials": Array [
+      "Object",
+      "unknown",
+    ],
+  },
+  "scope": "instance",
+  "start": 305,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Function",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Function",
+      },
+    ],
+    "string": "Function",
+  },
+}
+`;
+
+exports[`alias alias5: Item 4 1`] = `
+Object {
+  "alias": "Toaster.getInstance",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "Get the Toaster instance.",
+  "end": 632,
+  "filename": "jsdoc/alias5.js",
+  "ignore": false,
+  "loc": Object {
+    "end": Position {
+      "column": 11,
+      "index": 632,
+      "line": 34,
+    },
+    "start": Position {
+      "column": 8,
+      "index": 479,
+      "line": 29,
+    },
+  },
+  "raw": "/**
+         * Get the Toaster instance.
+         *
+         * @alias Toaster.getInstance
+         * @returns {Toaster} The Toaster instance.
+         */",
+  "returns": Object {
+    "description": "Toaster instance.",
+    "type": JSDocType {
+      "parsed": Array [
+        Object {
+          "name": "Toaster",
+          "type": "NAME",
+        },
+      ],
+      "simple": Array [
+        Object {
+          "name": "Toaster",
+        },
+      ],
+      "string": "Toaster",
+    },
+  },
+  "start": 479,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`alias alias6: Item 1 1`] = `
+Object {
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 37,
+  "filename": "jsdoc/alias6.js",
+  "ignore": false,
+  "loc": Object {
+    "end": Position {
+      "column": 22,
+      "index": 37,
+      "line": 3,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 15,
+      "line": 3,
+    },
+  },
+  "module": Object {
+    "name": "module:example",
+  },
+  "path": Array [],
+  "raw": "/** @module example */",
+  "start": 15,
+  "tags": ArrayContaining [],
+}
+`;
+
+exports[`alias alias6: Item 2 1`] = `
+Object {
+  "alias": "module:example",
+  "aliasOriginal": "Foo",
+  "ast": Any<Object>,
+  "cmt": Any<Object>,
+  "code": Any<String>,
+  "ctx": Any<Object>,
+  "description": "",
+  "end": 102,
+  "filename": "jsdoc/alias6.js",
+  "ignore": false,
+  "kind": "class",
+  "loc": Object {
+    "end": Position {
+      "column": 1,
+      "index": 102,
+      "line": 8,
+    },
+    "start": Position {
+      "column": 0,
+      "index": 39,
+      "line": 5,
+    },
+  },
+  "name": "module:example",
+  "path": Array [
+    Object {
+      "alias": "module:example",
+      "name": "module:example",
+      "original": "Foo",
+    },
+  ],
+  "properties": Array [
+    Object {
+      "filename": "jsdoc/alias6.js",
+      "isAsync": false,
+      "isConstructor": true,
+      "isGenerator": false,
+      "kind": "constructor",
+      "member": "constructor",
+      "memberOf": "Foo.prototype",
+      "name": "constructor",
+      "params": Array [],
+      "scope": "instance",
+      "type": JSDocType {
+        "parsed": Array [
+          Object {
+            "name": "Foo",
+            "type": "NAME",
+          },
+        ],
+        "simple": Array [
+          Object {
+            "name": "Foo",
+          },
+        ],
+        "string": "Foo",
+      },
+    },
+  ],
+  "raw": "/** @alias module:example */",
+  "start": 39,
+  "tags": ArrayContaining [],
+  "type": JSDocType {
+    "parsed": Array [
+      Object {
+        "name": "Foo",
+        "type": "NAME",
+      },
+    ],
+    "simple": Array [
+      Object {
+        "name": "Foo",
+      },
+    ],
+    "string": "Foo",
+  },
+}
+`;
