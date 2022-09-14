@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "packages/parser": {}
+  },
+  "always-link-local": true,
+  "separate-pull-requests": true,
+  "plugins": ["node-workspace"]
+}

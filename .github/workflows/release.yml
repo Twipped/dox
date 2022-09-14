@@ -1,0 +1,113 @@
+name: "Release, Please!"
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  packages: write
+  contents: write
+  pull-requests: write
+  id-token: write
+
+
+jobs:
+  makeRelease:
+    name: Process Commits
+    runs-on: ubuntu-latest
+    outputs:
+      releases_create: ${{ steps.release.outputs.releases_created }}
+      paths_released: ${{ steps.release.outputs.paths_released }}
+      packages: ${{ steps.releaseData.outputs.result }}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest
+          token: ${{secrets.GITHUB_TOKEN}}
+          default-branch: main
+
+      - name: Echo results
+        run: |
+          RESULT=$(cat << EOM
+          ${{ toJSON(steps.release.outputs) }}
+          EOM
+          )
+          echo "$RESULT"
+
+      - name: Make list of releases for downstream
+        id: releaseData
+        if: ${{ steps.release.outputs.paths_released != '[]' && steps.release.outputs.paths_released != '' }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const paths_released = ${{ steps.release.outputs.paths_released }} || [];
+            const release = ${{ toJSON(steps.release.outputs) }};
+            const packages = [];
+            for (const releasePath of paths_released) {
+              const tag = release[`${releasePath}--tag_name`];
+              const version = release[`${releasePath}--version`];
+              const [name] = String(release[`${releasePath}--name`]).split(':');
+
+              packages.push({
+                path: releasePath,
+                name,
+                tag,
+                version
+              });
+            }
+            console.log(packages);
+            return packages;
+
+
+  publish:
+    runs-on: ubuntu-latest
+    name: Publish Packages
+    needs: makeRelease
+    if: ${{ needs.makeRelease.outputs.paths_released != '[]' && needs.makeRelease.outputs.paths_released != '' }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJson(needs.makeRelease.outputs.packages) }}
+
+    steps:
+      - name: Echo package info
+        run: |
+          RESULT=$(cat << EOM
+          path: ${{ matrix.package.path }}
+          name: ${{ matrix.package.name }}
+          packageName: ${{ matrix.package.packageName }}
+          tag: ${{ matrix.package.tag }}
+          version: ${{ matrix.package.version }}
+          EOM
+          )
+          echo "$RESULT"
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install Dependencies
+        run: npm ci --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Build all packages
+        run: npm run build --if-present
+
+      - name: Build docs
+        run: npm run docs --if-present
+
+      - name: Publish to Github Registry
+        run: npm publish --workspace=${{ matrix.package.path }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
