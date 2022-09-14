@@ -1,7 +1,7 @@
 {
   "name": "@jsdox/parser",
   "description": "JSDoc Parser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Jocelyn Badgley <joc@twipped.com>",
   "homepage": "https://github.com/twipped/dox",
