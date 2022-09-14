@@ -48,23 +48,35 @@ export class SourceContext {
     attachmentThreshold = 1,
     cwd,
     dir = path.dirname(filename),
+    type,
+    conditionNames,
+    resolve,
   } = {}) {
     this.depth = '';
-    const resolver = enhancedResolve.create.sync({
-      fileSystem: new CachedInputFileSystem(fs, 4000),
-      extensions: [ '.js', '.jsx', '.cjs', '.mjs', '.ts', '.tsx', '.json', '.node' ],
-      roots: [ cwd ],
-      conditionNames: [ 'node', 'require' ],
-    });
-    const resolve = (target) => {
-      try {
-        return resolver(dir, target);
-      } catch (e) {
-        Error.captureStackTrace(e, resolve);
-        // throw new Error(e.message);
-        throw e;
+
+    if (!resolve) {
+      if (!conditionNames) {
+        conditionNames = (type === 'module')
+          ? [ 'node', 'import' ]
+          : [ 'node', 'require' ];
       }
-    };
+
+      const resolver = enhancedResolve.create.sync({
+        fileSystem: new CachedInputFileSystem(fs, 4000),
+        extensions: [ '.js', '.jsx', '.cjs', '.mjs', '.ts', '.tsx', '.json', '.node' ],
+        roots: [ cwd ],
+        conditionNames,
+      });
+      resolve = (target) => {
+        try {
+          return resolver(dir, target);
+        } catch (e) {
+          Error.captureStackTrace(e, resolve);
+          // throw new Error(e.message);
+          throw e;
+        }
+      };
+    }
 
     this.options = {
       attachmentThreshold,

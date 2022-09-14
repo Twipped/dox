@@ -11,19 +11,20 @@ export default function parseSource (code, {
   type = 'unambiguous',
   babelOptions,
   cwd = process.cwd(),
+  ...options
 } = {}) {
   const sourceFilename = filename ? path.relative(cwd, filename) : undefined;
   let ast;
 
   try {
     ast = babelParse(code, {
-      sourceType: type,
-      sourceFilename,
       plugins: [
         "jsx",
         "typescript",
       ],
       ...babelOptions,
+      sourceType: type,
+      sourceFilename,
       tokens: false,
     });
   } catch (e) {
@@ -31,7 +32,7 @@ export default function parseSource (code, {
     throw e;
   }
 
-  const found = crawl(ast, { cwd, filename });
+  const found = crawl(ast, { cwd, filename, type, ...options });
 
   debug(`Found ${found.comments.length} comments and ${found.exports.length} exports.`);
 
