@@ -66,11 +66,12 @@ jobs:
     name: Publish Packages
     needs: makeRelease
     if: ${{ needs.makeRelease.outputs.paths_released != '[]' && needs.makeRelease.outputs.paths_released != '' }}
-
     strategy:
       fail-fast: false
       matrix:
         package: ${{ fromJson(needs.makeRelease.outputs.packages) }}
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     steps:
       - name: Echo package info
@@ -94,6 +95,7 @@ jobs:
           node-version: lts/*
           cache: npm
           cache-dependency-path: '**/package-lock.json'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install Dependencies
         run: npm ci --ignore-scripts
@@ -108,6 +110,4 @@ jobs:
 
       - name: Publish to Github Registry
         run: npm publish --workspace=${{ matrix.package.path }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
