@@ -4,5 +4,6 @@
   },
   "always-link-local": true,
   "separate-pull-requests": true,
-  "plugins": ["node-workspace"]
+  "plugins": ["node-workspace"],
+  "bootstrap-sha": "ea4adc74923a36e69818d4c87fe8ba31923018ed"
 }
