@@ -20,7 +20,6 @@ export default function parseSource (code, {
       sourceType: type,
       sourceFilename,
       plugins: [
-        // enable jsx and flow syntax
         "jsx",
         "typescript",
       ],
